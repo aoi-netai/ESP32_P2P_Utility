@@ -1,0 +1,17 @@
+#ifndef SOFTAP_UTILITY_PACKETUTILITY_HPP
+#define SOFTAP_UTILITY_PACKETUTILITY_HPP
+
+#include <cstdint>
+
+// Packet 関連のエラーコード定義（雛形）
+enum class PacketError : uint8_t {
+    SUCCESS = 0,
+    PACKET_OVERFLOW,
+    TYPE_MISMATCH,
+    PACKET_NOT_INITIALIZED,
+    PACKET_NOT_ENDED,
+    PACKET_ALREADY_RETRIEVED,
+    
+};
+
+#endif // SOFTAP_UTILITY_PACKETUTILITY_HPP
